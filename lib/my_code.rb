@@ -13,7 +13,7 @@ def reduce(source_array, starting_point = 0)
     running_total = yield(source_array[index], running_total)
     print running_total
   end
-  if(!!running_total = false )
+  if(running_total = nil)
     running_total = false
   end
   return running_total
