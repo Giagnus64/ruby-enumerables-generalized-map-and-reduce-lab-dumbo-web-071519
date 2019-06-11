@@ -15,5 +15,6 @@ def reduce(source_array, starting_point = 0)
   end
   if(!!running_total = false )
     running_total = false
+  end
   return running_total
 end
