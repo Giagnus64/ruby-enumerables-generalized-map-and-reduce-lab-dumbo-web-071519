@@ -11,10 +11,9 @@ def reduce(source_array, starting_point = 0)
   running_total = starting_point
   source_array.length.times do |index|
     running_total = yield(source_array[index], running_total)
-    if(!!running_total = false )
-      running_total = false
-    end
     print running_total
   end
+  if(!!running_total = false )
+    running_total = false
   return running_total
 end
