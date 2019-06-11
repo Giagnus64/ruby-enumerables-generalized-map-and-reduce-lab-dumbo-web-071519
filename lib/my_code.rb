@@ -9,3 +9,8 @@ end
 
 def reduce(source_array, starting_point = 0)
   running_total = 0
+  source_array.length.times do |index|
+    running_total = yield(source_array[index], running_total)
+  end
+  return running_total
+end
